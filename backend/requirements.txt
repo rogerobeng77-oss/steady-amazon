@@ -1,0 +1,4 @@
+# The narration proxy in bedrock_proxy.py. The HTTP server is http.server
+# from the standard library; boto3 is the only thing from outside, and it
+# picks up credentials from this machine's own ~/.aws chain.
+boto3>=1.40

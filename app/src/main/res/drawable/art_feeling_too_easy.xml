@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from the hand-drawn source SVG feeling-too-easy.svg (see tools/svg-to-vector.py).
+     Regenerate rather than hand-edit. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path
+        android:pathData="M 10 26 L 86 26"
+        android:strokeColor="#C9BFAE"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M 41 58 H 55 A 8 8 0 0 1 63 66 V 76 A 8 8 0 0 1 55 84 H 41 A 8 8 0 0 1 33 76 V 66 A 8 8 0 0 1 41 58 Z"
+        android:fillColor="#40E0A458"
+        android:strokeColor="#E0A458"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

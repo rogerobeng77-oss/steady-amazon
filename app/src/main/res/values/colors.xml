@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Design direction, named in words for judges (see SPEC.md "Design"):
+         ground is "bark", a deep warm brown-black, not the cool purples or
+         navy already used elsewhere in this hackathon and not the light
+         cream/sand grounds a couple of other projects in the same survey use.
+         Accent is "ember", a muted gold, not the pinks, corals or oranges
+         already taken. "Moss", a quiet green, marks only the on-track state.
+         A ten-foot living-room interface also reads better dark: less glare
+         off the screen, better contrast for older eyes, and it does not
+         compete with the warm skin tones of a person standing in frame of
+         their own television. -->
+    <color name="bark">#241C16</color>
+    <color name="bark_raised">#332818</color>
+    <color name="bark_raised_focused">#463521</color>
+    <color name="ember">#E0A458</color>
+    <color name="ember_dim">#A97638</color>
+    <color name="moss">#6B9071</color>
+    <color name="moss_dim">#4A6350</color>
+    <color name="linen">#F3ECDD</color>
+    <color name="linen_dim">#C9BFAE</color>
+    <color name="clay">#B4694A</color>
+</resources>

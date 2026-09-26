@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug-build additions only. This file is not merged into a release APK, so the demo
+  receiver below does not exist in one and the `demo_day_offset` preference it writes has
+  nothing able to set it.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <receiver
+            android:name="com.steady.app.debug.DemoHooksReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.steady.app.DEMO_SEED" />
+                <action android:name="com.steady.app.DEMO_OFFSET" />
+                <action android:name="com.steady.app.DEMO_TEXT_SIZE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

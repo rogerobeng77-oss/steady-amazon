@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Steady" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/bark</item>
+        <item name="android:statusBarColor">@color/bark</item>
+        <item name="android:navigationBarColor">@color/bark</item>
+        <item name="android:colorBackground">@color/bark</item>
+    </style>
+</resources>

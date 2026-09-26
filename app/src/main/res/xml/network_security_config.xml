@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cleartext HTTP is allowed for exactly one host: the Android emulator's alias for
+     this development machine's own loopback interface, where the local Bedrock proxy
+     listens (see backend/bedrock_proxy.py and Narrator.kt). Nothing else gets an
+     exception, and nothing here ever reaches the public internet in plaintext. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

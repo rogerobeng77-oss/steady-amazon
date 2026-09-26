@@ -1,0 +1,57 @@
+# Android + Gradle — for the Fire TV apps
+
+# Local machine config — contains SDK paths, sometimes local secrets
+local.properties
+
+# Gradle
+.gradle/
+build/
+*/build/
+**/build/
+.gradletasknamecache
+
+# Signing / keys — never ship these
+*.keystore
+*.jks
+*.p12
+*.pem
+key.properties
+keystore.properties
+*.asc
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Instrumentation / profiling
+*.hprof
+
+# Local device / emulator state
+local.properties
+*.bin
+
+# OS
+.DS_Store
+
+# Kotlin incremental-compile cache
+.kotlin/
+
+# The Python sidecar in backend/ -- see backend/requirements.txt
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Agent / harness scratch
+.harness/

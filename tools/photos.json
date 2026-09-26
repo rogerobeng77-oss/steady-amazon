@@ -1,0 +1,54 @@
+{
+  "cs_march": {
+    "title": "File:Gimnasia para personas mayores en Cedel Carrasco - 20240117dicimouysm0093-49.jpg",
+    "bias": 0.5
+  },
+  "cs_ankle": {
+    "title": "File:Exercise Ankle Bends.png",
+    "mount": true
+  },
+  "cs_arm_raise": {
+    "title": "File:Gimnasia para personas mayores en Cedel Carrasco - 20240117dicimouysm0093-5.jpg",
+    "bias": 0.46
+  },
+  "cs_sit_to_stand": {
+    "title": "File:Exercise Chair Squat.png",
+    "mount": true
+  },
+  "cs_side_bend": {
+    "title": "File:Gimnasia para personas mayores en Cedel Carrasco - 20240117dicimouysm0093-6.jpg",
+    "bias": 0.48
+  },
+  "st_heel_toe": {
+    "title": "File:Gimnasia para personas mayores en Cedel Carrasco - 20240117dicimouysm0093-87.jpg",
+    "bias": 0.5
+  },
+  "st_single_leg": {
+    "title": "File:Exercise Stork Stand.png",
+    "mount": true
+  },
+  "st_march": {
+    "title": "File:Gimnasia para personas mayores en Cedel Carrasco - 20240117dicimouysm0093-63.jpg",
+    "bias": 0.48
+  },
+  "st_side_step": {
+    "title": "File:Gimnasia para personas mayores en el Espacio Modelo - 20250109dicimouyap0104.jpg",
+    "bias": 0.48
+  },
+  "st_calf_raise": {
+    "title": "File:Exercise Heel Raise Two Legs.png",
+    "mount": true
+  },
+  "session_ready": {
+    "title": "File:Clase de gimnasia para personas mayores en el Espacio Barradas 20221005dicimouyap0362.jpg",
+    "bias": 0.46
+  },
+  "session_complete": {
+    "title": "File:Clase de gimnasia para personas mayores en el Espacio Barradas 20221005dicimouyap0409.jpg",
+    "bias": 0.46
+  },
+  "home_hero": {
+    "title": "File:Clase de gimnasia para personas mayores en el Espacio Barradas 20221005dicimouyap0473.jpg",
+    "bias": 0.5
+  }
+}

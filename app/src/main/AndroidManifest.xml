@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Steady never asks for a camera or a microphone. It reads no sensor data. All
+         state (session history, tier, the family member's name) lives on-device via
+         DataStore. The one network call this app ever makes is to a local narration
+         proxy (see backend/bedrock_proxy.py) that turns rule-computed facts into two
+         short pieces of prose; it can never change what exercises are shown or what the
+         adherence rules decided, and every call has a timeout and a deterministic
+         fallback if it is unreachable. -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Fire OS 16 is Android 9 (API 28), where posting a notification needs no runtime
+         grant, so on the target device this line is inert. It is declared anyway so the
+         same APK behaves on an Android 13+ television, where the grant is required and
+         its absence makes notify() a no-op rather than an error. Steady never prompts
+         for it: a permission dialog in front of somebody's first session, for a channel
+         that is the app's second-best one anyway, is a worse trade than a silent
+         notification. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".SteadyApplication"
+        android:allowBackup="false"
+        android:banner="@drawable/banner"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.Steady">
+
+        <!-- Steady supplies its own WorkManager Configuration (see SteadyApplication),
+             so the library's on-demand initializer has to be removed rather than left to
+             race it. -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Steady">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Required for the app to be discoverable in the Fire TV /
+                     Android TV leanback launcher home screen. -->
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fire TV / leanback home-screen banner. Required size is 320x180dp. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:pathData="M0,0h320v180h-320z"
+        android:fillColor="#241C16" />
+    <!-- three steadying rings, off-centre, echoing a balance stance -->
+    <path
+        android:pathData="M160,90 m-46,0 a46,46 0,1 1,92 0 a46,46 0,1 1,-92 0"
+        android:strokeColor="#E0A458"
+        android:strokeWidth="6"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M160,90 m-28,0 a28,28 0,1 1,56 0 a28,28 0,1 1,-56 0"
+        android:strokeColor="#6B9071"
+        android:strokeWidth="5"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M160,90 m-10,0 a10,10 0,1 1,20 0 a10,10 0,1 1,-20 0"
+        android:fillColor="#F3ECDD" />
+</vector>
